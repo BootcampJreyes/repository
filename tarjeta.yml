@@ -4,3 +4,11 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/products
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka
+  instance:
+    hostname: localhost
