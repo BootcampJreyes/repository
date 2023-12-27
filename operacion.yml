@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/products
+      uri: mongodb://localhost:27017/banco
   main:
     allow-bean-definition-overriding: true
 eureka:
@@ -12,3 +12,6 @@ eureka:
       defaultZone: http://localhost:8091/eureka
   instance:
     hostname: localhost
+  redis:
+    host: localhost
+    port: 6379
